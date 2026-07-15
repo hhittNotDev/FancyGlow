@@ -1,6 +1,5 @@
 package hhitt.fancyglow.utils;
 
-import dev.dejvokep.boostedyaml.YamlDocument;
 import hhitt.fancyglow.FancyGlow;
 import hhitt.fancyglow.managers.PlayerGlowManager;
 import me.neznamy.tab.api.TabAPI;
@@ -15,13 +14,11 @@ import java.util.Objects;
 public class TabImplementation {
 
     private final FancyGlow plugin;
-    private final YamlDocument configuration;
     private final PlayerGlowManager playerGlowManager;
     private boolean initialized = false;
 
     public TabImplementation(FancyGlow plugin) {
         this.plugin = plugin;
-        this.configuration = plugin.getConfiguration();
         this.playerGlowManager = plugin.getPlayerGlowManager();
     }
 
@@ -40,7 +37,7 @@ public class TabImplementation {
             EventBus eventBus = Objects.requireNonNull(instance.getEventBus(), "TAB EventBus is not available.");
 
             plugin.getLogger().info("Successfully hooked into TAB. Automatic nametag coloring enabled.");
-            
+
             // Register the dynamic placeholder for real-time updates (Rainbow/Flashing)
             instance.getPlaceholderManager().registerPlayerPlaceholder(
                     "%fancyglow_tab_color%",

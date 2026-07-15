@@ -36,10 +36,6 @@ Flash_Rainbow: false
 # Notify players with permission and the server if player has an available update.
 Notify_Updates: true
 
-# This option only works if TAB v5.0.4 by NEZNAMY is on the server.
-# This will automatically set the player tag prefix to use the glow placeholder.
-Auto_Tag: false
-
 Messages:
   # All translations for plugin messages
   No_Permission: "<red>You do not have permission to perform this!"
