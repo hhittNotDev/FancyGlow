@@ -11,7 +11,6 @@ com-github-neznamy-tab-api = "5.0.3"
 dev-rollczi-litecommands = "3.9.7"
 net-kyori-adventure-platform-bukkit = "4.3.2"
 net-kyori-adventure-text-minimessage = "4.17.0"
-com-github-retrooper-packetevents-spigot = "2.7.0"
 org-spigotmc-spigot-api = "1.19.4-R0.1-SNAPSHOT"
 
 [libraries]
@@ -26,4 +25,3 @@ dev-rollczi-litecommands = { module = "dev.rollczi:litecommands-bukkit", version
 dev-rollczi-litecommands-adventure = { module = "dev.rollczi:litecommands-adventure-platform", version.ref = "dev-rollczi-litecommands" }
 net-kyori-adventure-platform-bukkit = { module = "net.kyori:adventure-platform-bukkit", version.ref = "net-kyori-adventure-platform-bukkit" }
 net-kyori-adventure-text-minimessage = { module = "net.kyori:adventure-text-minimessage", version.ref = "net-kyori-adventure-text-minimessage" }
-com-github-retrooper-packetevents-spigot = { module = "com.github.retrooper:packetevents-spigot", version.ref = "com-github-retrooper-packetevents-spigot" }
