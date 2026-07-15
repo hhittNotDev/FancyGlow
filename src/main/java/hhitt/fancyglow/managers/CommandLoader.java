@@ -19,12 +19,10 @@ import org.bukkit.command.CommandSender;
 
 public final class CommandLoader {
 
-    private final GlowManager glowManager;
     private final MessageHandler messageHandler;
     private final LiteCommands<CommandSender> liteCommands;
 
     public CommandLoader(FancyGlow plugin) {
-        this.glowManager = plugin.getGlowManager();
         this.messageHandler = plugin.getMessageHandler();
 
         this.liteCommands = LiteBukkitFactory.builder()
