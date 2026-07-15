@@ -54,7 +54,7 @@ tasks {
 
     java {
         toolchain {
-            languageVersion.set(JavaLanguageVersion.of(17))
+            languageVersion.set(JavaLanguageVersion.of(21))
         }
     }
 
@@ -81,7 +81,7 @@ tasks {
         prefix = name
         version = project.version.toString()
         main = project.group.toString() + ".FancyGlow"
-        apiVersion = "1.19"
+        apiVersion = "1.21"
         authors = listOf("hhitt")
         contributors = listOf("Sliide_")
         load = BukkitPluginDescription.PluginLoadOrder.POSTWORLD
