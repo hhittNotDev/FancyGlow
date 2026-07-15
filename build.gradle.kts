@@ -8,16 +8,16 @@ plugins {
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
+
     maven("https://jitpack.io/")
+    maven("https://repo.helpch.at/releases/")
     maven("https://libraries.minecraft.net/")
     maven("https://repo.panda-lang.org/releases/")
     maven("https://oss.sonatype.org/content/groups/public")
     maven("https://repo.codemc.io/repository/maven-releases/")
     maven("https://repo.codemc.io/repository/maven-snapshots/")
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
-    maven("https://repo.extendedclip.com/content/repositories/placeholderapi")
 }
 
 dependencies {
@@ -25,9 +25,7 @@ dependencies {
     compileOnly(libs.me.clip.placeholderapi)
     compileOnly(libs.org.spigotmc.spigot.api)
     compileOnly(libs.com.github.neznamy.tab.api)
-    compileOnly(libs.com.github.retrooper.packetevents.spigot)
 
-    // Change "zap" to "implementation" for all these:
     implementation(libs.net.kyori.adventure.api)
     implementation(libs.org.bstats.bstats.bukkit)
     implementation(libs.dev.rollczi.litecommands)
